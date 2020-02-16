@@ -8,15 +8,30 @@
 
 import UIKit
 
+var appStore = Store(reducer: appReducer)
+
+// assembles app state
+func appReducer(_ state: State?, action: ActionType) -> State? {
+    if let state = state {
+        return [
+            "settings": settingReducer(state["settings"] as? Dictionary<String, Bool>, action: action)
+        ]
+    }
+    return [
+        "settings": settingReducer(nil, action: action)
+    ]
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var store: Store?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        self.store = Store(reducer: appReducer)
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

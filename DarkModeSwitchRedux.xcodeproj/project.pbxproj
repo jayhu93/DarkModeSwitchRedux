@@ -13,6 +13,8 @@
 		D1B978CE23F9C95D001C8EA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B978CC23F9C95D001C8EA4 /* Main.storyboard */; };
 		D1B978D023F9C95E001C8EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B978CF23F9C95E001C8EA4 /* Assets.xcassets */; };
 		D1B978D323F9C95E001C8EA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B978D123F9C95E001C8EA4 /* LaunchScreen.storyboard */; };
+		D1B978DB23F9CA12001C8EA4 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B978DA23F9CA12001C8EA4 /* Redux.swift */; };
+		D1B978DD23F9CABD001C8EA4 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B978DC23F9CABD001C8EA4 /* Setting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D1B978CF23F9C95E001C8EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1B978D223F9C95E001C8EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1B978D423F9C95E001C8EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B978DA23F9CA12001C8EA4 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		D1B978DC23F9CABD001C8EA4 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				D1B978CF23F9C95E001C8EA4 /* Assets.xcassets */,
 				D1B978D123F9C95E001C8EA4 /* LaunchScreen.storyboard */,
 				D1B978D423F9C95E001C8EA4 /* Info.plist */,
+				D1B978DA23F9CA12001C8EA4 /* Redux.swift */,
+				D1B978DC23F9CABD001C8EA4 /* Setting.swift */,
 			);
 			path = DarkModeSwitchRedux;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B978DD23F9CABD001C8EA4 /* Setting.swift in Sources */,
 				D1B978CB23F9C95D001C8EA4 /* ViewController.swift in Sources */,
 				D1B978C723F9C95D001C8EA4 /* AppDelegate.swift in Sources */,
+				D1B978DB23F9CA12001C8EA4 /* Redux.swift in Sources */,
 				D1B978C923F9C95D001C8EA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
